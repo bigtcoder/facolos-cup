@@ -19,7 +19,7 @@ const CONFIG = {
     { en: "ADVANCED",     vi: "NÂNG CAO",  range: "3.0–3.5" }
   ],
   SCHEDULE: ["10:00–13:00", "13:00–16:00", "16:00–19:00"], // Beginner, Intermediate, Advanced
-  LINKS: { ZALO: "https://zaloapp.com/qr/p/1c8hejlfp6le1", WHATSAPP: "https://wa.me/message/NYGL7RCLU6TGI1?src=qr", INSTAGRAM: "" }, // decoded from Tom's QR codes; Instagram "" = hidden
+  LINKS: { ZALO: "https://zalo.me/84798350171", WHATSAPP: "https://wa.me/447832428071", INSTAGRAM: "" }, // direct links from Tom; Instagram "" = hidden
   ORGANISER: "[YOUR BRAND]"
 };
 /* ===================================================================== */
