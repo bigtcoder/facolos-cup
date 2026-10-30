@@ -20,7 +20,7 @@ const CONFIG = {
   ],
   SCHEDULE: ["10:00–13:00", "13:00–16:00", "16:00–19:00"], // Beginner, Intermediate, Advanced
   LINKS: { ZALO: "https://zalo.me/84798350171", WHATSAPP: "https://wa.me/447832428071", INSTAGRAM: "" }, // direct links from Tom; Instagram "" = hidden
-  ORGANISER: "[YOUR BRAND]"
+  ORGANISER: "Friendly Pickleball Da Nang"
 };
 /* ===================================================================== */
 
