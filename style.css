@@ -159,3 +159,5 @@ background:radial-gradient(closest-side,rgba(198,255,0,.18),transparent)}
 @media (min-width:768px){.hero-player{display:block;width:min(30vw,260px);left:-40px;opacity:.5}}
 @media (min-width:1024px){.hero-player{width:min(27vw,380px);left:-1.5vw;opacity:1}}
 @media (min-width:1024px){.hero-player{width:min(23vw,360px);left:-1vw}}
+@media (min-width:1024px){.hero-player{bottom:auto;top:118px;width:min(24vw,340px);left:-1.5vw}}
+@media (min-width:1024px){.hero-player{filter:drop-shadow(0 -4px 16px rgba(198,255,0,.28))}}
