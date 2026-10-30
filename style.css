@@ -169,3 +169,9 @@ background:radial-gradient(closest-side,rgba(198,255,0,.18),transparent)}
 @media (min-width:1024px){.hero-player{width:min(21vw,300px)}}
 @media (min-width:1024px) and (max-width:1199px){.hero-player{width:18vw}}
 .extras{max-width:900px;margin:22px auto 0;font-size:clamp(18px,4.6vw,28px)}
+/* mobile/tablet: player top-left accent mirroring paddle */
+@media (max-width:1023px){.hero-player{display:block;bottom:auto;left:10px;top:64px;width:min(34vw,150px);opacity:.75;filter:drop-shadow(0 0 18px rgba(198,255,0,.35))}
+.hero-paddle{opacity:.75}.hero{padding-top:250px}}
+@media (min-width:768px) and (max-width:1023px){.hero-player{width:min(20vw,190px);top:80px;left:16px;opacity:.9}.hero-paddle{opacity:.9}.hero{padding-top:90px}}
+@media (min-width:768px) and (max-width:1023px){.hero{padding-top:320px}}
+@media (min-width:768px) and (max-width:1023px){.hero{padding-top:350px}.hero-paddle{width:120px;top:80px;right:5vw}}
