@@ -176,3 +176,7 @@ background:radial-gradient(closest-side,rgba(198,255,0,.18),transparent)}
 @media (min-width:768px) and (max-width:1023px){.hero{padding-top:320px}}
 @media (min-width:768px) and (max-width:1023px){.hero{padding-top:350px}.hero-paddle{width:120px;top:80px;right:5vw}}
 @media (max-width:767px){.hero-player{width:min(50vw,205px);left:8px;top:60px}.hero{padding-top:170px}}
+@media (max-width:767px){.hero-paddle{right:38px}}
+@media (max-width:767px){.hero-paddle{right:44px}}
+@media (min-width:768px) and (max-width:1023px){.hero-paddle{right:calc(5vw + 8px)}}
+@media (min-width:1024px){.hero-paddle{right:calc(6vw + 6px)}}
