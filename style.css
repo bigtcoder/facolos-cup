@@ -146,3 +146,7 @@ background:radial-gradient(closest-side,rgba(198,255,0,.18),transparent)}
 .sp-role{color:var(--lime);font-size:11px;font-weight:700;letter-spacing:.3em;text-align:center}
 .social a[hidden]{display:none}
 @media (min-width:700px){.qrs{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(3,1fr)}.steps li{flex-direction:column;text-align:center}}
+/* elite cutout hero paddle */
+.hero-paddle{-webkit-mask:none!important;mask:none!important;border-radius:0;height:auto;width:min(26vw,110px);right:8px;top:70px;opacity:.45;filter:drop-shadow(0 0 22px rgba(198,255,0,.45)) drop-shadow(0 10px 24px rgba(0,0,0,.6))}
+@media (min-width:768px){.hero-paddle{width:min(16vw,190px);right:6vw;top:90px;opacity:.95}}
+@media (min-width:1024px){.hero-paddle{width:min(13vw,200px);right:6vw;top:120px;opacity:1}}
