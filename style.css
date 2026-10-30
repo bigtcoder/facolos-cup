@@ -168,3 +168,4 @@ background:radial-gradient(closest-side,rgba(198,255,0,.18),transparent)}
 @media (min-width:1024px){.hero-player{left:clamp(16px,3vw,60px);width:min(22vw,340px)}}
 @media (min-width:1024px){.hero-player{width:min(21vw,300px)}}
 @media (min-width:1024px) and (max-width:1199px){.hero-player{width:18vw}}
+.extras{max-width:900px;margin:22px auto 0;font-size:clamp(18px,4.6vw,28px)}

@@ -25,12 +25,12 @@ const CONFIG = {
 /* ===================================================================== */
 
 const VI = {
-  tagline:"CHƠI NHƯ NHÀ VÔ ĐỊCH", prizePool:"TỔNG GIẢI THƯỞNG 10.000.000+ VNĐ", signup:"ĐĂNG KÝ NGAY",
+  tagline:"CHƠI NHƯ NHÀ VÔ ĐỊCH", prizePool:"6 VỢT &amp;<br>GIẢI THƯỞNG<br>10.000.000+ VNĐ", signup:"ĐĂNG KÝ NGAY",
   limit:"Giới hạn 144 VĐV · 48 người mỗi hạng đấu", detailsTag:"THÔNG TIN CHÍNH", detailsH:"THÔNG TIN GIẢI ĐẤU",
   fmtH:"THỂ THỨC", fmtP:"Đôi nam nữ · 3 hạng đấu", plH:"VẬN ĐỘNG VIÊN", plP:"48 người mỗi hạng (24 đội) · tổng 144",
   feeH:"LỆ PHÍ", feeP:"mỗi người", dateH:"NGÀY & GIỜ", venueH:"ĐỊA ĐIỂM", maps:"Mở Google Maps ›",
   refH:"TRỌNG TÀI", refP:"Trọng tài điều hành toàn bộ giải và bắt mọi pha bóng trong/ngoài. Mỗi game 11 điểm, chỉ cần hơn 1 điểm là thắng.", payP:"Thanh toán qua QR ngân hàng hoặc tiền mặt tại giải", foodH:"ĐỒ ĂN & THỨC UỐNG", foodP:"CÓ BÁN ĐỒ ĂN & THỨC UỐNG TẠI SÂN", duprH:"TÍNH ĐIỂM DUPR",
-  prizeTag:"MỖI HẠNG ĐẤU · MỖI ĐỘI", prizesH:"10.000.000+ VNĐ TIỀN THƯỞNG", podiumPh:"[ẢNH BỤC TRAO GIẢI / CÚP]",
+  prizeTag:"MỖI HẠNG ĐẤU · MỖI ĐỘI", prizesH:"6 VỢT &amp; GIẢI THƯỞNG 10.000.000+ VNĐ", extras:"Ngoài ra còn có: áo thun Facolos, bóng, huy chương và cúp", podiumPh:"[ẢNH BỤC TRAO GIẢI / CÚP]",
   p1a:"Tiền mặt mỗi đội", p1b:"Mỗi VĐV nhận một vợt Facolos EliteX", p1c:"Cúp", p1d:"Huy chương",
   prizeNote:"Giải thưởng áp dụng cho cả 3 hạng đấu: Cơ bản, Trung cấp và Nâng cao.",
   winLine:"Giành vợt Facolos EliteX, cây vợt dân chuyên tin dùng", schedTag:"NGÀY THI ĐẤU", schedH:"LỊCH THI ĐẤU",
