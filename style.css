@@ -192,3 +192,4 @@ h3,.timeline time{color:var(--gold)}
 .hero::after{content:"";position:absolute;z-index:0;pointer-events:none;left:-10%;right:-10%;bottom:-120px;height:260px;border-radius:50%;border-top:3px solid rgba(61,139,205,.35);box-shadow:0 -14px 40px rgba(18,56,201,.25)}
 @media (max-width:767px){.title .wordmark{width:min(80vw,360px)}}
 .podium{width:min(100%,380px);margin:0 auto 30px}.podium svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
+.prize-head{font-size:clamp(24px,7vw,68px)}
