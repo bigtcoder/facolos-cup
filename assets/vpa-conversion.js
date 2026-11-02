@@ -64,6 +64,6 @@
     return Object.keys(R).map(p => ({ id: p, level: R[p], matches: N[p], wins: W[p], losses: L[p], provisional: N[p] < E.provisional_matches }))
       .sort((a, b) => b.level - a.level);
   }
-  g.VPA = { toVPA, fromVPA, combine, eligibility, equivalents, rank, load: (base = '') => fetch(base + 'assets/vpa-conversion.json?v=202611021800').then(r => r.json()) };
+  g.VPA = { toVPA, fromVPA, combine, eligibility, equivalents, rank, load: (base = '') => fetch(base + 'assets/vpa-conversion.json?v=202611022200').then(r => r.json()) };
   if (typeof module !== 'undefined') module.exports = g.VPA;
 })(typeof window !== 'undefined' ? window : globalThis);
