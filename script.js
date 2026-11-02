@@ -30,7 +30,7 @@ const VI = {
   fmtH:"THỂ THỨC", fmtP:"Đôi nam nữ · 3 hạng đấu", plH:"VẬN ĐỘNG VIÊN", plP:"48 người mỗi hạng (24 đội) · tổng 144",
   feeH:"LỆ PHÍ", feeP:"mỗi người", dateH:"NGÀY & GIỜ", venueH:"ĐỊA ĐIỂM", maps:"Mở Google Maps ›",
   refH:"TRỌNG TÀI", refP:"Trọng tài điều hành toàn bộ giải và bắt mọi pha bóng trong/ngoài. Mỗi game 11 điểm, chỉ cần hơn 1 điểm là thắng.", payP:"Thanh toán qua QR ngân hàng hoặc tiền mặt tại giải", foodH:"ĐỒ ĂN & THỨC UỐNG", foodP:"CÓ BÁN ĐỒ ĂN & THỨC UỐNG TẠI SÂN", duprH:"TÍNH ĐIỂM DUPR",
-  prizeTag:"MỖI HẠNG ĐẤU · MỖI ĐỘI", prizesH:"6 VỢT &amp; GIẢI THƯỞNG 10.000.000+ VNĐ", extras:"Ngoài ra còn có: áo thun, bóng, huy chương và cúp", podiumPh:"[ẢNH BỤC TRAO GIẢI / CÚP]",
+  prizeTag:"MỖI HẠNG ĐẤU · MỖI ĐỘI", prizesH:"6 VỢT &amp; GIẢI THƯỞNG 10.000.000+ VNĐ", extras:"Ngoài ra còn có: áo thun, bóng, huy chương và cúp",
   p1a:"Tiền mặt mỗi đội", p1b:"Mỗi VĐV nhận một vợt EliteX", p1c:"Cúp", p1d:"Huy chương",
   prizeNote:"Giải thưởng áp dụng cho cả 3 hạng đấu: Cơ bản, Trung cấp và Nâng cao.",
   winLine:"Giành vợt EliteX, cây vợt dân chuyên tin dùng", schedTag:"NGÀY THI ĐẤU", schedH:"LỊCH THI ĐẤU",
@@ -90,4 +90,4 @@ if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: re
   els.forEach(el => io.observe(el));
 } else els.forEach(el => el.classList.add("in"));
 
-function toast(msg){let t=document.getElementById("fc-toast");if(!t){t=document.createElement("div");t.id="fc-toast";t.style.cssText="position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:rgba(5,8,5,.92);color:#C6FF00;border:1px solid rgba(198,255,0,.4);padding:12px 20px;border-radius:999px;font:600 14px Saira,sans-serif;z-index:9999;box-shadow:0 0 24px rgba(198,255,0,.25);transition:opacity .3s";document.body.appendChild(t);}t.textContent=msg;t.style.opacity=1;clearTimeout(t._h);t._h=setTimeout(()=>t.style.opacity=0,2500);}
+function toast(msg){let t=document.getElementById("fc-toast");if(!t){t=document.createElement("div");t.id="fc-toast";t.style.cssText="position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:rgba(11,15,46,.94);color:#F4701E;border:1px solid rgba(244,112,30,.4);padding:12px 20px;border-radius:999px;font:600 14px Saira,sans-serif;z-index:9999;box-shadow:0 0 24px rgba(244,112,30,.25);transition:opacity .3s";document.body.appendChild(t);}t.textContent=msg;t.style.opacity=1;clearTimeout(t._h);t._h=setTimeout(()=>t.style.opacity=0,2500);}
