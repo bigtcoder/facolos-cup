@@ -195,3 +195,13 @@ h3,.timeline time{color:var(--gold)}
 .prize-head{font-size:clamp(24px,7vw,68px)}
 .pl,.amp{display:inline}.amp{font-size:.8em;line-height:1.05;margin:.06em 0}
 .prize-head{font-size:clamp(24px,5.6vw,60px)}@media(max-width:767px){.prize-head{font-size:clamp(24px,7.4vw,34px)}}
+
+/* VPA */
+.top .vpa-nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);line-height:0}
+.vpa-nav img{height:34px;width:auto}
+.about-vpa{text-align:center;max-width:720px;margin:0 auto}
+.vpa-big{width:min(70vw,360px);height:auto;margin:0 auto 18px;display:block}
+.about-vpa p{color:#e3e7f5;margin-top:12px;line-height:1.6}.about-vpa .tag{color:var(--gold)}
+.vpa-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.vpa-foot img{height:30px;width:auto;margin:16px auto 4px;display:block;opacity:.9}
+@media (max-width:360px){.brand img,.vpa-nav img{height:28px}}
