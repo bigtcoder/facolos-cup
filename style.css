@@ -205,3 +205,6 @@ h3,.timeline time{color:var(--gold)}
 .vpa-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
 .vpa-foot img{height:30px;width:auto;margin:16px auto 4px;display:block;opacity:.9}
 @media (max-width:360px){.brand img,.vpa-nav img{height:28px}}
+.vpa-btns{gap:14px}
+.vpa-btns .btn{min-height:48px;padding:14px 28px;font-size:15px;line-height:1.2;text-align:center;white-space:normal;box-sizing:border-box}
+@media (max-width:599px){.vpa-btns{flex-direction:column;align-items:stretch;max-width:360px;margin-left:auto;margin-right:auto}.vpa-btns .btn{width:100%}}
