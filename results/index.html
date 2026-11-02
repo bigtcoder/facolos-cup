@@ -1,21 +1,21 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>VPA Results &amp; Rankings · Papi Point Finals</title>
-<link rel="icon" href="../assets/favicon.svg?v=202611022200" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon.svg?v=202611030900" type="image/svg+xml">
 <link href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@100..125,400..900&display=swap&subset=vietnamese" rel="stylesheet">
-<link rel="stylesheet" href="../assets/vpa-pages.css?v=202611022200"></head><body>
-<header class="vh"><a href="../"><img src="../assets/vpa-logo.webp?v=202611022200" alt="VPA"></a><nav><a href="../ratings/" data-i18n="nConv">Converter</a><a href="../results/" data-i18n="nRes">Results</a></nav><button id="langBtn">VI</button></header>
+<link rel="stylesheet" href="../assets/vpa-pages.css?v=202611030900"></head><body>
+<header class="vh"><a href="../"><img src="../assets/vpa-logo.webp?v=202611030900" alt="VPA"></a><nav><a href="../ratings/" data-i18n="nConv">Converter</a><a href="../results/" data-i18n="nRes">Results</a></nav><button id="langBtn">VI</button></header>
 <main><h1 data-i18n="h">VPA <span>Results &amp; Rankings</span></h1>
 <div id="msg"></div>
 <div class="card"><h3 data-i18n="rkH">VPA rankings (doubles)</h3><table id="rk"></table>
-<p class="note" data-i18n="rkNote">Elo-style doubles model seeded from each player's converted ratings. <span class="pill prov">P</span> = provisional (fewer than 5 VPA matches).</p></div>
+<p class="note" data-i18n="rkNote">VPA rating model (Gaussian skill, point-margin updates, every match rated individually) seeded from each player's converted ratings. Match weights: tournament 1.0, knockout 1.1, league 0.9, club 0.8, rec 0.5; max ±0.25 per match. <span class="pill prov">P</span> = provisional (uncertainty ≥ 0.30).</p></div>
 <div class="card"><h3 data-i18n="resH">Results</h3><div class="row"><div><label data-i18n="flt">Filter event / player</label><input id="q"></div></div><table id="res"></table></div>
-</main><footer>VPA · <a href="../">Papi Point Finals</a> · <a href="../ratings/" data-i18n="nConv">Converter</a></footer>
+<div class="card" id="rep"></div></main><footer>VPA · <a href="../">Papi Point Finals</a> · <a href="../privacy/">Privacy</a> · <a href="../ratings/" data-i18n="nConv">Converter</a></footer>
 <script>window.VPA_I18N={en:{nConv:"Ratings converter",nRes:"Results",nc:"Result logging is not connected yet. Rankings will appear once organisers start logging matches.",demo:"DEMO DATA — fictional players for layout testing only.",
 pl:"Player",lvl:"VPA level",mp:"Matches",wl:"W–L",seed:"Seed",date:"Date",ev:"Event",dv:"Division",ta:"Team A",tb:"Team B",sc:"Score",none:"No results yet."},
-vi:{nConv:"Quy đổi điểm trình",nRes:"Kết quả",h:"VPA <span>Kết quả &amp; Xếp hạng</span>",rkH:"Bảng xếp hạng VPA (đôi)",rkNote:"Mô hình kiểu Elo cho đánh đôi, khởi tạo từ điểm trình đã quy đổi. <span class=\"pill prov\">P</span> = tạm thời (dưới 5 trận VPA).",
+vi:{nConv:"Quy đổi điểm trình",nRes:"Kết quả",h:"VPA <span>Kết quả &amp; Xếp hạng</span>",rkH:"Bảng xếp hạng VPA (đôi)",rkNote:"Mô hình xếp hạng VPA (kỹ năng Gauss, cập nhật theo hiệu số điểm, mỗi trận tính riêng), khởi tạo từ điểm trình đã quy đổi. Hệ số trận: giải 1.0, loại trực tiếp 1.1, liên đoàn 0.9, CLB 0.8, giao lưu 0.5; tối đa ±0.25 mỗi trận. <span class=\"pill prov\">P</span> = tạm thời (độ bất định ≥ 0.30).",
 resH:"Kết quả",flt:"Lọc giải / VĐV",nc:"Chưa kết nối hệ thống ghi kết quả. Bảng xếp hạng sẽ hiển thị khi BTC bắt đầu nhập trận.",demo:"DỮ LIỆU MẪU — VĐV giả lập, chỉ để thử giao diện.",
 pl:"VĐV",lvl:"Trình VPA",mp:"Số trận",wl:"T–B",seed:"Khởi điểm",date:"Ngày",ev:"Giải",dv:"Hạng",ta:"Đội A",tb:"Đội B",sc:"Tỉ số",none:"Chưa có kết quả."}};</script>
-<script src="../assets/vpa-i18n.js?v=202611022200"></script><script src="../assets/vpa-config.js?v=202611022200"></script><script src="../assets/vpa-conversion.js?v=202611022200"></script><script src="../assets/vpa-data.js?v=202611022200"></script>
+<script src="../assets/vpa-i18n.js?v=202611030900"></script><script src="../assets/vpa-config.js?v=202611030900"></script><script src="../assets/vpa-conversion.js?v=202611030900"></script><script src="../assets/vpa-rating.js?v=202611030900"></script><script src="../assets/vpa-data.js?v=202611030900"></script><script src="../assets/vpa-report.js?v=202611030900"></script><script>VPAReport(document.getElementById("rep"))</script>
 <script>
 let D=null,P=null,demo=new URLSearchParams(location.search).has('demo');const f2=x=>(+x).toFixed(2),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function demoData(){const n=['Demo An','Demo Bình','Demo Chi','Demo Dũng','Demo Em','Demo Phúc','Demo Giang','Demo Hà'],g=['male','male','female','male','female','male','female','female'];
@@ -25,8 +25,8 @@ function demoData(){const n=['Demo An','Demo Bình','Demo Chi','Demo Dũng','Dem
  const results=M.map((m,i)=>({id:'m'+i,event:'Demo Cup',division:'VPA 2.5–3.0',played_on:'2026-11-0'+(i+1),team_a1:'p'+m[0],team_a2:'p'+m[1],team_b1:'p'+m[2],team_b2:'p'+m[3],a1:n[m[0]],a2:n[m[1]],b1:n[m[2]],b2:n[m[3]],games:m[4].map((s,j)=>({g:j+1,a:s[0],b:s[1]}))}));
  return{players,ratings,results}}
 function draw(){if(!P)return;if(!D){rk.innerHTML='';res.innerHTML='';return}
- const {s}=VPAData.seeds(P,D.players,D.ratings),R=VPA.rank(P,VPAData.toMatches(D.results),s),nm=Object.fromEntries(D.players.map(p=>[p.id,p.display_name]));
- rk.innerHTML='<tr><th>#</th><th>'+vt('pl')+'</th><th>'+vt('lvl')+'</th><th>'+vt('seed')+'</th><th>'+vt('mp')+'</th><th>'+vt('wl')+'</th></tr>'+(R.length?R.map((r,i)=>'<tr><td>'+(i+1)+'</td><td>'+esc(nm[r.id])+(r.provisional?' <span class="pill prov">P</span>':'')+'</td><td><b>'+f2(r.level)+'</b></td><td>'+f2(s[r.id])+'</td><td>'+r.matches+'</td><td>'+r.wins+'–'+r.losses+'</td></tr>').join(''):'<tr><td colspan=6>'+vt('none')+'</td></tr>');
+ const {s}=VPAData.seeds(P,D.players,D.ratings),R=VPARating.rank(VPAData.toMatches(D.results),s,Object.fromEntries(D.players.map(p=>[p.id,p.gender]))),nm=Object.fromEntries(D.players.map(p=>[p.id,p.display_name]));
+ rk.innerHTML='<tr><th>#</th><th>'+vt('pl')+'</th><th>'+vt('lvl')+'</th><th>'+vt('seed')+'</th><th>'+vt('mp')+'</th><th>'+vt('wl')+'</th></tr>'+(R.length?R.map((r,i)=>'<tr><td>'+(i+1)+'</td><td>'+esc(nm[r.id])+(r.provisional?' <span class="pill prov">P</span>':'')+'</td><td><b>'+f2(r.level)+'</b></td><td>'+(s[r.id]==null?'–':f2(s[r.id]))+' <small>±'+f2(r.sigma)+'</small>'+'</td><td>'+r.matches+'</td><td>'+r.wins+'–'+r.losses+'</td></tr>').join(''):'<tr><td colspan=6>'+vt('none')+'</td></tr>');
  const qq=q.value.toLowerCase(),L=D.results.filter(r=>!qq||[r.event,r.a1,r.a2,r.b1,r.b2].join(' ').toLowerCase().includes(qq));
  res.innerHTML='<tr><th>'+vt('date')+'</th><th>'+vt('ev')+'</th><th>'+vt('dv')+'</th><th>'+vt('ta')+'</th><th>'+vt('tb')+'</th><th>'+vt('sc')+'</th></tr>'+(L.length?L.map(r=>'<tr><td>'+esc(r.played_on)+'</td><td>'+esc(r.event)+'</td><td>'+esc(r.division)+'</td><td>'+esc([r.a1,r.a2].filter(Boolean).join(' / '))+'</td><td>'+esc([r.b1,r.b2].filter(Boolean).join(' / '))+'</td><td>'+(r.games||[]).map(g=>g.a+'–'+g.b).join(', ')+'</td></tr>').join(''):'<tr><td colspan=6>'+vt('none')+'</td></tr>')}
 function msgs(){msg.innerHTML=demo?'<div class="warn">'+vt('demo')+'</div>':(!VPAData.configured()?'<div class="warn">'+vt('nc')+'</div>':'')}

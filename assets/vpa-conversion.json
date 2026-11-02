@@ -431,10 +431,63 @@
    "via": "PVNA",
    "extra_sd": 0.45,
    "confidence": "low",
-   "source": "LOOL states compatibility with PVNA scale (lool.vn/pickleball-rating); start 2.70 M / 2.30 F similar to PVNA defaults",
-   "n": 0
+   "source": "LOOL states compatibility with PVNA scale (lool.vn/pickleball-rating); start 2.70 M / 2.30 F similar to PVNA defaults; 9 probable name links to PVNA",
+   "n": 9
+  },
+  "PICKNA": {
+   "label": "PICKNA (Nghệ An)",
+   "type": "via",
+   "via": "PVNA",
+   "extra_sd": 0.25,
+   "confidence": "low",
+   "source": "empirical: 311 exact unique name matches PICKNA~PVNA doubles, mean PVNA-PICKNA +0.055, sd 0.186 -> treated as PVNA scale",
+   "n": 311
+  },
+  "VAIR": {
+   "label": "VAIR",
+   "type": "offset",
+   "offset": 0.0,
+   "sd": 0.25,
+   "confidence": "medium-low",
+   "source": "Bounce comparison table (VAIR ≈ DUPR at every level; converter range ±0.1)",
+   "n": null
+  },
+  "IPTPA": {
+   "label": "IPTPA",
+   "type": "offset",
+   "offset": 0.0,
+   "sd": 0.4,
+   "confidence": "low",
+   "source": "Bounce comparison table (IPTPA level ≈ DUPR; converter range ±0.5)",
+   "n": null
+  },
+  "WPR": {
+   "label": "WPR",
+   "type": "offset",
+   "offset": -0.5,
+   "sd": 0.6,
+   "confidence": "very low",
+   "source": "Bounce converter: DUPR 3.5 -> WPR 4.0 (3.5-4.5); table gives categories only (entry/mid/high/pro)",
+   "n": 1
+  },
+  "SELF": {
+   "label": "Self-rated",
+   "type": "offset",
+   "offset": 0.0,
+   "sd": 0.6,
+   "confidence": "very low",
+   "source": "Bounce comparison table (self-rating ≈ DUPR nominally); self-ratings commonly overstated - wide band",
+   "n": null
   }
  },
+ "not_convertible": [
+  "VNPA",
+  "VPTA",
+  "LMPVN (Elo)",
+  "PickTour",
+  "Diễn đàn Thủ đô / Pickleball Hà Nội",
+  "TMBR (pickleball.vn)"
+ ],
  "eligibility": {
   "rule": "cap = division upper bound on VPA scale; upper = est + z*sd (80%)",
   "eligible": "upper <= cap",

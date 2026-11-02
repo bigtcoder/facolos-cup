@@ -1,5 +1,5 @@
 (async function(){
-const SYS=['DUPR','PVNA','VDPR','UTRP','SPORTCONNECT','LOOL'],$=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const SYS=['DUPR','PVNA','VDPR','PICKNA','LOOL','SPORTCONNECT','UTRP','VAIR','IPTPA','WPR','SELF'],$=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let sb=null,D={players:[],ratings:[],events:[]};dt.value=new Date().toISOString().slice(0,10);
 const demo=new URLSearchParams(location.search).has('demo');
 function slot(k){return '<div class="slot" data-k="'+k+'"><label>'+vt('pl')+' '+k+'</label><input class="nm" list="plist" data-i18n-ph="search" placeholder="'+vt('search')+'"><div class="row"><div><label>'+vt('g')+'</label><select class="gd"><option value="male">M</option><option value="female">F</option></select></div></div><div class="rts"></div><button class="b g ar" type="button">'+vt('addR')+'</button></div>'}

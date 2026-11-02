@@ -20,11 +20,11 @@ window.VPAData = (function () {
     players.forEach(pl => {
       const ins = ratings.filter(r => r.player_id === pl.id && r.system !== 'VPA' && P.systems[r.system])
         .map(r => ({ system: r.system, rating: +r.rating, reliable: r.rating_type !== 'unspecified' }));
-      const c = VPA.combine(P, ins, pl.gender); s[pl.id] = c ? c.level : 3.0; lvl[pl.id] = c;
+      const c = VPA.combine(P, ins, pl.gender); s[pl.id] = c ? c.level : null; lvl[pl.id] = c;
     });
     return { s, lvl };
   }
   const toMatches = res => res.map(r => ({ id: r.id, date: r.played_on, a: [r.team_a1, r.team_a2], b: [r.team_b1, r.team_b2],
-    games: (r.games || []).map(g => [g.a, g.b]) }));
+    games: (r.games || []).map(g => [g.a, g.b]), type: r.match_type || (r.stage === 'ko' || r.stage === 'third' || /^series/.test(r.stage || '') ? 'tournament_knockout' : 'tournament') }));
   return { configured, client, loadAll, seeds, toMatches };
 })();
