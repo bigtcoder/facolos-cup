@@ -5,8 +5,8 @@
 const CONFIG = {
   SIGNUP_URL: "",                        // OPTIONAL override. "" = SIGN UP buttons scroll to the "How to sign up" section
   DATE:    { en: "SUN 15 NOV 2026", vi: "Chủ Nhật, 15/11/2026" },
-  START:   "10:00",
-  END:     "19:00",
+  START:   "08:00",
+  END:     "21:30+",
   VENUE:   "PAPI POINT SOCIAL",
   ADDRESS: "2 Trần Hữu Tước, Đà Nẵng",   // [CONFIRM ADDRESS]
   CITY:    "ĐÀ NẴNG",
@@ -14,30 +14,30 @@ const CONFIG = {
   DUPR:    { en: "[YES/NO]", vi: "[CÓ/KHÔNG]" },
   ENTRY_FEE: 550000,                     // VND per player
   DIVISIONS: [                           // name + DUPR range
-    { en: "BEGINNER",     vi: "CƠ BẢN",    range: "2.0–2.5" },
-    { en: "INTERMEDIATE", vi: "TRUNG CẤP", range: "2.5–3.0" },
-    { en: "ADVANCED",     vi: "NÂNG CAO",  range: "3.0–3.5" }
+    { en: "BEGINNER · OPEN DOUBLES",     vi: "CƠ BẢN · ĐÔI TỰ DO",    range: "2.0–2.5" },
+    { en: "INTERMEDIATE · OPEN DOUBLES", vi: "TRUNG CẤP · ĐÔI TỰ DO", range: "2.5–3.0" },
+    { en: "ADVANCED · MEN’S DOUBLES",     vi: "NÂNG CAO · ĐÔI NAM",  range: "3.0–3.5" }
   ],
-  SCHEDULE: ["10:00–13:00", "13:00–16:00", "16:00–19:00"], // Beginner, Intermediate, Advanced
+  SCHEDULE: ["08:00–12:30", "13:00–17:30", "17:30–21:30+"], // Morning Beginner, Afternoon Intermediate, Evening Advanced
   LINKS: { ZALO: "https://zalo.me/84798350171", WHATSAPP: "https://wa.me/447832428071", INSTAGRAM: "" }, // direct links from Tom; Instagram "" = hidden
   ORGANISER: "Friendly Pickleball Da Nang"
 };
 /* ===================================================================== */
 
 const VI = {
-  tagline:"CHƠI NHƯ NHÀ VÔ ĐỊCH", prizePool:'<span class="pl">6 VỢT FACOLOS ELITEX</span><br><span class="amp">&amp;</span><br><span class="pl">GIẢI THƯỞNG 10.000.000+ VNĐ</span>', signup:"ĐĂNG KÝ NGAY",
+  tagline:"CHƠI NHƯ NHÀ VÔ ĐỊCH", prizePool:'<span class="pl">6 VỢT FACOLOS ELITE X 16MM</span><br><span class="amp">&amp;</span><br><span class="pl">GIẢI THƯỞNG 10.000.000+ VNĐ</span>', signup:"ĐĂNG KÝ NGAY",
   limit:"Số suất có hạn · 24 đội mỗi hạng đấu", detailsTag:"THÔNG TIN CHÍNH", detailsH:"THÔNG TIN GIẢI ĐẤU",
-  fmtH:"THỂ THỨC", fmtP:"Đôi nam nữ · 3 hạng đấu", plH:"SỐ ĐỘI", plBig:"24 ĐỘI MỖI HẠNG", plP:"Số suất có hạn — ai đăng ký trước được trước", prH:"GIẢI THƯỞNG", prBig:"6 VỢT ELITEX", prP:"+ quỹ thưởng 10.000.000+ VNĐ, huy chương & cúp",
+  fmtH:"THỂ THỨC", fmtP:"Đôi tự do · 3 hạng đấu", fmtNote:"Không giới hạn giới tính, ghép cặp tự do: đôi nam, đôi nữ hay nam nữ đều được. Riêng hạng Nâng cao 3.0–3.5 chỉ dành cho đôi nam.", plH:"SỐ ĐỘI", plBig:"24 ĐỘI MỖI HẠNG", plP:"Số suất có hạn — ai đăng ký trước được trước", prH:"GIẢI THƯỞNG", prBig:"6 VỢT ELITE X 16MM", prP:"+ quỹ thưởng 10.000.000+ VNĐ, huy chương & cúp",
   feeH:"LỆ PHÍ", feeP:"mỗi người", dateH:"NGÀY & GIỜ", venueH:"ĐỊA ĐIỂM", maps:"Mở Google Maps ›",
   refH:"TRỌNG TÀI", refP:"Trọng tài điều hành toàn bộ giải và bắt mọi pha bóng trong/ngoài. Mỗi game 11 điểm, chỉ cần hơn 1 điểm là thắng.", payP:"thanh toán qua QR ngân hàng hoặc tiền mặt tại giải", foodH:"ĐỒ ĂN & THỨC UỐNG", foodP:"CÓ BÁN ĐỒ ĂN & THỨC UỐNG TẠI SÂN", duprH:"TÍNH ĐIỂM DUPR",
-  prizeTag:"MỖI HẠNG ĐẤU · MỖI ĐỘI", prizesH:'<span class="pl">6 VỢT FACOLOS ELITEX</span><br><span class="amp">&amp;</span><br><span class="pl">GIẢI THƯỞNG 10.000.000+ VNĐ</span>', extras:"Ngoài ra còn có: áo thun, bóng, huy chương và cúp",
-  p1a:"Tiền mặt mỗi đội", p1b:"Mỗi VĐV nhận một vợt EliteX", p1c:"Cúp", p1d:"Huy chương",
+  prizeTag:"MỖI HẠNG ĐẤU · MỖI ĐỘI", prizesH:'<span class="pl">6 VỢT FACOLOS ELITE X 16MM</span><br><span class="amp">&amp;</span><br><span class="pl">GIẢI THƯỞNG 10.000.000+ VNĐ</span>', extras:"Ngoài ra còn có: áo thun, bóng, huy chương và cúp",
+  p1a:"Tiền mặt mỗi đội", p1b:"Mỗi VĐV nhận một vợt Elite X 16mm", p1c:"Cúp", p1d:"Huy chương",
   prizeNote:"Giải thưởng áp dụng cho cả 3 hạng đấu: Cơ bản, Trung cấp và Nâng cao.",
-  winLine:"Giành vợt EliteX, cây vợt dân chuyên tin dùng", schedTag:"NGÀY THI ĐẤU", schedH:"LỊCH THI ĐẤU",
-  s1:"CƠ BẢN · 2.0–2.5", s1d:"Check-in, vòng bảng, chung kết và trao huy chương.", s2:"TRUNG CẤP · 2.5–3.0", s2d:"Check-in, vòng bảng, chung kết và trao huy chương.",
-  s3:"NÂNG CAO · 3.0–3.5", s3d:"Check-in, vòng bảng, chung kết và trao huy chương.", schedNote:"Thời gian là dự kiến và có thể thay đổi.",
+  winLine:"Giành vợt Elite X 16mm, cây vợt dân chuyên tin dùng", schedTag:"NGÀY THI ĐẤU", schedH:"LỊCH THI ĐẤU",
+  s1:"BUỔI SÁNG · CƠ BẢN 2.0–2.5", s1d:'24 cặp · Đôi tự do<ul class="sched-rows"><li><em>08:00–10:30</em> 6 sân · Vòng loại</li><li><em>10:30–11:30</em> 4 sân · Vòng 1/8 + Tứ kết</li><li><em>11:30–12:00</em> 2 sân · Bán kết</li><li><em>12:00–12:30</em> 1 sân · Chung kết &amp; Trao giải</li></ul>', s2:"BUỔI CHIỀU · TRUNG CẤP 2.5–3.0", s2d:'24 cặp · Đôi tự do<ul class="sched-rows"><li><em>13:00–15:30</em> 6 sân · Vòng loại</li><li><em>15:30–16:30</em> 4 sân · Vòng 1/8 + Tứ kết</li><li><em>16:30–17:00</em> 2 sân · Bán kết</li><li><em>17:00–17:30</em> 1 sân · Chung kết &amp; Trao giải</li></ul>',
+  s3:"BUỔI TỐI · NÂNG CAO 3.0–3.5", s3d:'24 cặp · Chỉ đôi nam<ul class="sched-rows"><li><em>17:30–20:00</em> 6 sân · Vòng loại</li><li><em>20:00–21:00</em> 4 sân · Vòng 1/8 + Tứ kết</li><li><em>21:00–21:30</em> 2 sân · Bán kết</li><li><em>21:30</em> 1 sân · Chung kết &amp; Trao giải</li></ul>', schedNote:"Mỗi buổi là một hạng đấu đôi gồm 24 cặp. Thời gian có thể thay đổi nhẹ.",
   faqTag:"CẦN BIẾT TRƯỚC KHI THI ĐẤU", faqH:"LUẬT & HỎI ĐÁP",
-  q1:"Tôi đăng ký hạng nào?", a1:"Cơ bản: DUPR 2.0–2.5, Trung cấp: 2.5–3.0, Nâng cao: 3.0–3.5. Dùng điểm DUPR của bạn; nếu chưa có, hãy tự đánh giá trung thực. VĐV có điểm ở ranh giới (2.5 hoặc 3.0) được chọn một trong hai hạng. Hạng của đội tính theo VĐV có điểm cao hơn. Ban tổ chức có thể điều chỉnh VĐV hoặc đội sang hạng khác để đảm bảo công bằng.",
+  q1:"Tôi đăng ký hạng nào?", a1:"Cơ bản: DUPR 2.0–2.5, Trung cấp: 2.5–3.0, Nâng cao: 3.0–3.5. Hạng Cơ bản và Trung cấp là đôi tự do: không giới hạn giới tính — đôi nam, đôi nữ hay nam nữ đều được. Hạng Nâng cao chỉ dành cho đôi nam. Dùng điểm DUPR của bạn; nếu chưa có, hãy tự đánh giá trung thực. VĐV có điểm ở ranh giới (2.5 hoặc 3.0) được chọn một trong hai hạng. Hạng của đội tính theo VĐV có điểm cao hơn. Ban tổ chức có thể điều chỉnh VĐV hoặc đội sang hạng khác để đảm bảo công bằng.",
   q2:"Tôi chưa có đồng đội, vẫn tham gia được chứ?", a2:"Được. Nhắn tin cho chúng tôi qua Zalo kèm điểm trình độ và giới tính, chúng tôi sẽ ghép đôi bạn với người cùng trình độ.",
   q3:"Nếu một hạng đấu không đủ người thì sao?", a3:"Nếu một hạng không đủ người, chúng tôi có thể gộp với hạng gần nhất. Nếu bạn không muốn thi đấu ở hạng đã gộp, bạn được hoàn lại toàn bộ lệ phí.",
   q4:"Tôi cần mang theo gì?", b1:"Vợt của bạn", b2:"Giày chơi sân không để lại vết", b3:"Khăn và bình nước (có bán đồ ăn, thức uống tại sân, không cần mang đồ ăn)", b4:"Giấy tờ tùy thân để check-in",
