@@ -213,3 +213,6 @@ h3,.timeline time{color:var(--gold)}
 .sched-rows{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:4px}
 .sched-rows li{color:var(--mut);font-size:.95rem}.sched-rows em{font-style:normal;color:var(--gold);font-weight:700;display:inline-block;min-width:104px}
 .fmt-note{color:var(--mut);font-size:.92rem;margin-top:6px}
+
+.nondupr{color:#F4701E;font-weight:700;font-size:.92rem;margin:8px 0}
+.nondupr.center{text-align:center;margin:-10px auto 22px;max-width:760px}
