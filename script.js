@@ -26,10 +26,10 @@ const CONFIG = {
 
 const VI = {
   tagline:"CHƠI NHƯ NHÀ VÔ ĐỊCH", prizePool:'<span class="pl">6 VỢT FACOLOS ELITEX</span><br><span class="amp">&amp;</span><br><span class="pl">GIẢI THƯỞNG 10.000.000+ VNĐ</span>', signup:"ĐĂNG KÝ NGAY",
-  limit:"Giới hạn 144 VĐV · 48 người mỗi hạng đấu", detailsTag:"THÔNG TIN CHÍNH", detailsH:"THÔNG TIN GIẢI ĐẤU",
-  fmtH:"THỂ THỨC", fmtP:"Đôi nam nữ · 3 hạng đấu", plH:"VẬN ĐỘNG VIÊN", plP:"48 người mỗi hạng (24 đội) · tổng 144",
+  limit:"Số suất có hạn · 24 đội mỗi hạng đấu", detailsTag:"THÔNG TIN CHÍNH", detailsH:"THÔNG TIN GIẢI ĐẤU",
+  fmtH:"THỂ THỨC", fmtP:"Đôi nam nữ · 3 hạng đấu", plH:"SỐ ĐỘI", plBig:"24 ĐỘI MỖI HẠNG", plP:"Số suất có hạn — ai đăng ký trước được trước", prH:"GIẢI THƯỞNG", prBig:"6 VỢT ELITEX", prP:"+ quỹ thưởng 10.000.000+ VNĐ, huy chương & cúp",
   feeH:"LỆ PHÍ", feeP:"mỗi người", dateH:"NGÀY & GIỜ", venueH:"ĐỊA ĐIỂM", maps:"Mở Google Maps ›",
-  refH:"TRỌNG TÀI", refP:"Trọng tài điều hành toàn bộ giải và bắt mọi pha bóng trong/ngoài. Mỗi game 11 điểm, chỉ cần hơn 1 điểm là thắng.", payP:"Thanh toán qua QR ngân hàng hoặc tiền mặt tại giải", foodH:"ĐỒ ĂN & THỨC UỐNG", foodP:"CÓ BÁN ĐỒ ĂN & THỨC UỐNG TẠI SÂN", duprH:"TÍNH ĐIỂM DUPR",
+  refH:"TRỌNG TÀI", refP:"Trọng tài điều hành toàn bộ giải và bắt mọi pha bóng trong/ngoài. Mỗi game 11 điểm, chỉ cần hơn 1 điểm là thắng.", payP:"thanh toán qua QR ngân hàng hoặc tiền mặt tại giải", foodH:"ĐỒ ĂN & THỨC UỐNG", foodP:"CÓ BÁN ĐỒ ĂN & THỨC UỐNG TẠI SÂN", duprH:"TÍNH ĐIỂM DUPR",
   prizeTag:"MỖI HẠNG ĐẤU · MỖI ĐỘI", prizesH:'<span class="pl">6 VỢT FACOLOS ELITEX</span><br><span class="amp">&amp;</span><br><span class="pl">GIẢI THƯỞNG 10.000.000+ VNĐ</span>', extras:"Ngoài ra còn có: áo thun, bóng, huy chương và cúp",
   p1a:"Tiền mặt mỗi đội", p1b:"Mỗi VĐV nhận một vợt EliteX", p1c:"Cúp", p1d:"Huy chương",
   prizeNote:"Giải thưởng áp dụng cho cả 3 hạng đấu: Cơ bản, Trung cấp và Nâng cao.",
@@ -45,7 +45,7 @@ const VI = {
   spTag:"ĐỒNG HÀNH CÙNG", spRole:"ĐỐI TÁC VỢT", spNote:"Vợt giải thưởng do Facolos tài trợ", born:"CHUNG KẾT PICKLEBALL ĐÀ NẴNG", vpaSite:"Trang web VPA", vpaMore:"Tìm hiểu thêm về VPA →", credit:"Vợt do Facolos tài trợ", ctaH:'ĐỪNG BỎ LỠ <span class="lime">KỶ NGUYÊN ELITE</span>', org:"Tổ chức bởi", pres:"Giới thiệu bởi", vpaTag:"VỀ VPA", vpaP1:"VPA — Vietnam Pickleball Asia — là chuỗi giải đấu pickleball mới đến từ Đà Nẵng, tổ chức các giải đấu cạnh tranh, chuyên nghiệp cho người chơi mọi trình độ.", vpaP2:"Papi Point Finals là giải đấu đầu tiên của chúng tôi, và sẽ còn nhiều giải nữa trên khắp Việt Nam. Nhắn tin cho chúng tôi qua Zalo hoặc WhatsApp để nhận thông tin giải tiếp theo.",
   suTag:"NHẮN TIN ĐỂ GIỮ SUẤT", suH:"CÁCH ĐĂNG KÝ", st1:"Nhắn tin cho chúng tôi qua Zalo hoặc WhatsApp kèm tên bạn, tên đồng đội, hạng đấu và điểm DUPR của cả hai.",
   st2:"Thanh toán 550.000 VNĐ mỗi người qua QR ngân hàng (chúng tôi gửi khi bạn nhắn tin) hoặc tiền mặt vào ngày thi đấu.", st3:"Chúng tôi xác nhận suất của bạn.",
-  msgZ:"NHẮN TIN QUA ZALO", msgW:"NHẮN TIN QUA WHATSAPP", suNote:"Suất đăng ký theo thứ tự ai đến trước · 48 người mỗi hạng",
+  msgZ:"NHẮN TIN QUA ZALO", msgW:"NHẮN TIN QUA WHATSAPP", suNote:"Số suất có hạn — ai đăng ký trước được trước",
   q6:"Lệ phí bao nhiêu và thanh toán thế nào?", a6:"Lệ phí là 550.000 VNĐ mỗi người. Thanh toán qua QR ngân hàng (chúng tôi gửi khi bạn nhắn tin qua Zalo hoặc WhatsApp) hoặc tiền mặt vào ngày thi đấu."
 };
 const EN = {};
