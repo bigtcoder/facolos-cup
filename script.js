@@ -11,7 +11,7 @@ const CONFIG = {
   ADDRESS: "2 Trần Hữu Tước, Đà Nẵng",   // [CONFIRM ADDRESS]
   CITY:    "ĐÀ NẴNG",
   MAPS_URL: "https://maps.app.goo.gl/DodEvhsAraNEZ1tYA",
-  DUPR:    { en: "[YES/NO]", vi: "[CÓ/KHÔNG]" },
+  DUPR:    { en: "NO", vi: "KHÔNG" },
   ENTRY_FEE: 550000,                     // VND per player
   DIVISIONS: [                           // name + DUPR range
     { en: "BEGINNER · OPEN DOUBLES",     vi: "CƠ BẢN · ĐÔI TỰ DO",    range: "2.0–2.5" },
@@ -46,7 +46,9 @@ const VI = {
   suTag:"NHẮN TIN ĐỂ GIỮ SUẤT", suH:"CÁCH ĐĂNG KÝ", st1:"Nhắn tin cho chúng tôi qua Zalo hoặc WhatsApp kèm tên bạn, tên đồng đội, hạng đấu và điểm DUPR của cả hai.",
   st2:"Thanh toán 550.000 VNĐ mỗi người qua QR ngân hàng (chúng tôi gửi khi bạn nhắn tin) hoặc tiền mặt vào ngày thi đấu.", st3:"Chúng tôi xác nhận suất của bạn.",
   msgZ:"NHẮN TIN QUA ZALO", msgW:"NHẮN TIN QUA WHATSAPP", suNote:"Số suất có hạn — ai đăng ký trước được trước",
-  q6:"Lệ phí bao nhiêu và thanh toán thế nào?", a6:"Lệ phí là 550.000 VNĐ mỗi người. Thanh toán qua QR ngân hàng (chúng tôi gửi khi bạn nhắn tin qua Zalo hoặc WhatsApp) hoặc tiền mặt vào ngày thi đấu."
+  q6:"Lệ phí bao nhiêu và thanh toán thế nào?", a6:"Lệ phí là 550.000 VNĐ mỗi người. Thanh toán qua QR ngân hàng (chúng tôi gửi khi bạn nhắn tin qua Zalo hoặc WhatsApp) hoặc tiền mặt vào ngày thi đấu.",
+  ndNote:"Giải không tính điểm DUPR: kết quả không ảnh hưởng điểm DUPR của bạn.",
+  q7:"Giải có tính điểm DUPR không?", a7:"Không. Papi Point Finals là giải không tính điểm DUPR: các trận đấu không được tính điểm và kết quả không gửi lên DUPR, nên điểm DUPR của bạn sẽ không thay đổi. Chúng tôi chỉ dùng điểm DUPR để xếp bạn vào đúng hạng đấu."
 };
 const EN = {};
 document.querySelectorAll("[data-i18n]").forEach(el => { EN[el.dataset.i18n] ??= el.innerHTML; });
