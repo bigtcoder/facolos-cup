@@ -208,3 +208,5 @@ h3,.timeline time{color:var(--gold)}
 .vpa-btns{gap:14px}
 .vpa-btns .btn{min-height:48px;padding:14px 28px;font-size:15px;line-height:1.2;text-align:center;white-space:normal;box-sizing:border-box}
 @media (max-width:599px){.vpa-btns{flex-direction:column;align-items:stretch;max-width:360px;margin-left:auto;margin-right:auto}.vpa-btns .btn{width:100%}}
+.fee-line{text-align:center;margin:18px auto 22px;max-width:760px;padding:14px 18px;border:1px solid rgba(244,112,30,.4);border-radius:12px;font-size:1.05rem}
+.fee-line strong{color:#F4701E;letter-spacing:.06em}
